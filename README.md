@@ -80,7 +80,6 @@ This is a simple HTML driven project used to help developers start hosting their
 -->
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
-* ![SweetAlert][SWAL.com]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -187,9 +186,8 @@ Project Link: [https://github.com/morganlarson/render-hosting-example](https://g
 * [Malven's Grid Cheatsheet](https://grid.malven.co/)
 -->
 * [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [SweetAlert2 (SWAL)](https://sweetalert2.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
