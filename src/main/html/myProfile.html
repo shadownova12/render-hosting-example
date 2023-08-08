@@ -38,8 +38,7 @@
       $(".text-secondary").each(function () {
         $(this).css("width", $(this).clientWidth)
         $(this).prop("contentEditable", "true");
-        $(this).css("outline", "2px solid #007BFF");
-        $(this).css("border-radius", "5px");
+        $(this).attr("style", "outline: 2px solid #007BFF; border-radius: 5px; padding: 0px 7px;");
       });
       $(".links").each(function () {
         $(this).css("padding", "0px 7px");
@@ -75,7 +74,9 @@
               <img src="https://static.vecteezy.com/system/resources/previews/002/002/257/original/beautiful-woman-avatar-character-icon-free-vector.jpg" alt="Admin" class="rounded-circle" width="150">
               <div class="mt-3">
                 <h4>Morgan Larson</h4>
+                <p/>
                 <p class="text-secondary mb-1">Full Stack Developer</p>
+                <p/>
                 <p class="text-muted font-size-sm text-secondary" style="margin-top: 7px">Olathe, KS</p>
                 <button class="btn btn-primary" onclick="warningPopup()">Follow</button>
                 <button class="btn btn-outline-primary" onclick="warningPopup()">Message</button>
