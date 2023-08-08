@@ -18,19 +18,19 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
+<!--
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-<!--
-*** [![MIT License][license-shield]][license-url]
-*** [![LinkedIn][linkedin-shield]][linkedin-url]
+
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 -->
 
 
 
-<!-- PROJECT LOGO -->
-<br />
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -62,7 +62,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is a simple HTML driven project used to help developers start hosting their own websites. This specific tutorial uses [render.com](https://render.com/) to host the webpage. Follow the instructions in the <a href="#getting-started">Getting Started</a> section to begin!
+This is a simple HTML driven project used to help developers start hosting their own websites. This specific tutorial uses [render.com](https://render.com/) for hosting. Follow the instructions in the <a href="#getting-started">Getting Started</a> section to begin!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,6 +80,7 @@ This is a simple HTML driven project used to help developers start hosting their
 -->
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![JQuery][JQuery.com]][JQuery-url]
+* ![SweetAlert][SWAL.com]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,7 +89,7 @@ This is a simple HTML driven project used to help developers start hosting their
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple steps.
 
 <!--
 *** ### Prerequisites
@@ -101,22 +102,32 @@ To get a local copy up and running follow these simple example steps.
 -->
 
 ### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Fork the repo
+2. Clone the newly forked repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/morganlarson/render-hosting-example.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+
+### Hosting Instructions
+1. Create a free account on [render.com](https://render.com/)
+2. Create a new Web Service
+3. Select ``+ Connect`` button under "GitHub" on the right
+4. Connect to your GitHub account
+5. Choose which repositories you want to host on Render
+     * NOTE: you can only choose repositories which you own, which is why you need to fork this repository first
+7. Once connected to your GitHub repos, select the purple ``Connect`` button next to the specific repository you want to create a Web Service for
+8. Fill out the required information
+     * Choose what you want the service name to be -- this will be the URL (i.e. ``example-service-name.onrender.com``)
+     * Select your region -- Midwest USA can choose ``Oregon (US West)`` or ``Ohio (US East)``
+     * Choose the branch you want to deploy from -- NOTE: whenever you push to this branch, your website will be deployed. Do not choose an in-development branch.
+     * Choose the runtime for your web service -- this repository comes with a Dockerfile already created so ``Docker`` will be easiest
+     * Select your Instance Type (i.e. free or not)
+     * Optional: fill out the information under the ``Advanced`` section
+     * Select ``Create Web Service``
+     * Enjoy your new website!
+9. Make the changes you want to make to the code
+10. Commit your changes to the deployment branch
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -159,7 +170,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Morgan Larson - [@your_twitter](https://twitter.com/your_username) - larsonjmorgan@gmail.com
+Morgan Larson - [LinkedIn](https://www.linkedin.com/in/morgan-j-larson/) - larsonjmorgan@gmail.com
 
 Project Link: [https://github.com/morganlarson/render-hosting-example](https://github.com/morganlarson/render-hosting-example)
 
@@ -169,13 +180,12 @@ Project Link: [https://github.com/morganlarson/render-hosting-example](https://g
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
+<!--
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
 * [Malven's Grid Cheatsheet](https://grid.malven.co/)
+-->
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
@@ -200,18 +210,8 @@ Use this space to list resources you find helpful and would like to give credit 
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/morgan-j-larson/
 [product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
+[SWAL.com]: https://img.shields.io/badge/SweetAlert2-purple?style=for-the-badge
+[SWAL-url]: https://sweetalert2.github.io/
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
